@@ -1,0 +1,44 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#095C06",
+      "launch": {
+         "web_url": "https://www.flyordie.com/jogo/reversi/"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "https://www.flyordie.com/games/images/icon/reversi.ico"
+      }, {
+         "size": 32,
+         "url": "https://www.flyordie.com/games/images/icon/reversi.ico"
+      }, {
+         "size": 48,
+         "url": "https://www.flyordie.com/games/images/icon/reversi.ico"
+      }, {
+         "size": 64,
+         "url": "https://www.flyordie.com/games/images/icon/reversi.ico"
+      }, {
+         "size": 96,
+         "url": "https://www.flyordie.com/games/images/icon/reversi.ico"
+      }, {
+         "size": 128,
+         "url": "https://www.flyordie.com/games/images/icon/reversi.ico"
+      }, {
+         "size": 256,
+         "url": "https://www.flyordie.com/games/images/icon/reversi.ico"
+      } ]
+   },
+   "description": "Jogo Reversi",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "F5CjR1DhBZl6YQBz2aQaLwnaPeZfeECLD/tFA+PpHZE=",
+   "name": "Jogo Reversi",
+   "version": "2020.4.14.6587"
+}

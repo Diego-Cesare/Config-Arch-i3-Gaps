@@ -1,0 +1,6 @@
+2020/04/16-19:21:56.409 2d7d Reusing MANIFEST /home/diego/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2020/04/16-19:21:56.409 2d7d Recovering log #55
+2020/04/16-19:21:56.419 2d7d Reusing old log /home/diego/.config/chromium/Default/Local Storage/leveldb/000055.log 
+2020/04/16-20:37:24.660 ab08 Level-0 table #59: started
+2020/04/16-20:37:24.664 ab08 Level-0 table #59: 15131 bytes OK
+2020/04/16-20:37:24.666 ab08 Delete type=0 #55

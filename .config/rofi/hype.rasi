@@ -1,0 +1,24 @@
+* {
+	
+	white:			#FFFFFF;
+	black:			#aa000000;
+	grey:			#363636;
+	red:			#FF0000;
+
+	spacing:		2;
+
+	
+    
+}
+
+#configuration {
+	modi: "drun";
+	drun-match-fields: "name";
+	show-icons: true;
+	icon-theme: "la-capitaine";
+	terminal: "xfce4-terminal";
+	display-window: "Switch to";
+    window-format: "{t}";
+    location: 7;
+    yoffset: -38;
+}
