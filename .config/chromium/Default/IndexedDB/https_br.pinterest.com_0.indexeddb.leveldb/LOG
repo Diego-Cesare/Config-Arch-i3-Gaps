@@ -1,0 +1,5 @@
+2020/04/18-18:59:07.539 17a09 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_br.pinterest.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/18-18:59:28.693 387e Level-0 table #5: started
+2020/04/18-18:59:28.699 387e Level-0 table #5: 14029 bytes OK
+2020/04/18-18:59:28.706 387e Delete type=0 #3
+2020/04/18-18:59:28.706 387e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,9 @@
+[Added Associations]
+image/jpeg=viewnior.desktop;
+image/png=viewnior.desktop;
+x-scheme-handler/http=exo-web-browser.desktop;
+x-scheme-handler/https=exo-web-browser.desktop;
+
+[Default Applications]
+image/png=viewnior.desktop
+

@@ -1,0 +1,373 @@
+
+[colors]
+background = #ffffff
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+background-alt = #444
+foreground = #dfdfdf
+foreground-alt = #555
+
+;======================;
+ ### Configurations ###
+;======================;
+
+[bar/mybar]
+;monitor = ${env:MONITOR:HDMI:1}
+width = 100%
+height = 25
+offset-x = % 
+offset-y = %
+radius = 0
+fixed-center = true
+bottom = false
+;separator = --
+
+background = #aa
+;background-1 = 
+;background-2 = 
+
+line-size = 2
+line-color = #ff0000
+
+border-size = 2
+border-color = #aaffffff
+
+padding-left = 0
+padding-right = 0
+
+;module-margin-left = 
+module-margin-right = 
+
+scroll-up = i3-desknext
+scroll-down = i3-deskprev
+
+wm-restack = i3
+
+;=============;
+ ### Fonts ###
+;=============;
+
+font-0 = FontAwesome:size=13
+font-1 = Ubuntu:Regular:size=13
+font-2 = unifont:fontformat=truetype:size=20:antialias=20;2
+font-3 = PowerlineSymbols:pixelsize=18;5
+font-4 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
+
+;===================================;
+ ### Positions end order modules ###
+;===================================;
+
+modules-left = i3 
+modules-center = date
+modules-right = txt2 cpu txt1 memory txt volume
+
+;====================;
+ ### Modules left ###
+;====================;
+
+[module/i3]
+type = internal/i3
+format = <label-state><label-mode>
+
+index-sort = false
+enable-click = true 
+enable-scroll = true
+ws-icon-0 = 10;10 
+ws-icon-1 = 1;1  
+ws-icon-2 = 2;2 
+ws-icon-3 = 3;3  
+ws-icon-4 = 4;4 
+ws-icon-5 = 5;5 
+ws-icon-6 = 6;6 
+ws-icon-7 = 7;7 
+ws-icon-8 = 8;8 
+ws-icon-9 = 9;9 
+ws-icon-default =
+
+pin-workspaces = true ; Only show workspaces on the same output as the bar
+
+label-mode = " %mode% "
+label-focused = %{F#ff0000 B#aa00ffff} %{F-} %icon% %{B#aa0B0F10 F#aaffffff} %{F-}
+
+label-visible = " %icon% "
+
+label-unfocused = " %icon% "
+label-unfocused-foreground = #
+label-unfocused-background = #
+
+label-urgent = " %icon% "
+label-urgent-foreground = #ffffff
+label-urgent-background = #ff0000
+
+
+;;==============================;;
+;;       MODULES CENTER         ;;
+;;==============================;;
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "⚌ 📅 %d.%m.%y"
+time= " 🕛 %H:%M:%S ⚌ "
+
+label = %date% %time%
+label-foreground = #ffffff
+;label-background = #
+
+;;==============================;;
+;;        MODULES RIGHT          ;;
+;;==============================;;
+
+[module/memory]
+type = internal/memory
+format = <label><bar-used>
+label = RAM 💽 %gb_used% 
+;label-foreground = #0088CC
+label-background = #1c1c1c
+
+bar-used-width = 10
+bar-used-gradient = true
+bar-used-foreground-0 = #33FF00
+bar-used-foreground-1 = #80FF00
+bar-used-foreground-2 = #CCFF00
+bar-used-foreground-3 = #FFE500
+bar-used-foreground-4 = #FF9900
+bar-used-foreground-5 = #FF4D00
+bar-used-foreground-6 = #FF0000
+
+bar-used-indicator = |
+bar-used-indicator-font = 2
+bar-used-indicator-foreground = #fff
+bar-used-fill = ▯
+bar-used-fill-font = 2
+bar-used-empty = ▮
+bar-used-empty-font = 2
+bar-used-empty-foreground = #44
+bar-used-indicator-background = #1c1c1c
+bar-used-empty-background = #1c1c1c
+bar-used-fill-background = #1c1c1c
+
+[module/txt1]
+type = custom/text
+content = 
+content-foreground = #1c1c1c
+content-background = #484848
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+
+format = <label> <ramp-coreload>
+font-1 = Unifont:size=5;-3
+format-background = #484848
+
+label = CPU 🖥
+;label-font = 3
+;label-foreground = #0088CC
+
+ramp-coreload-0 = ▁
+ramp-coreload-0-font = 4
+ramp-coreload-0-foreground = #05FF00
+ramp-coreload-1 = ▂
+ramp-coreload-1-font = 4
+ramp-coreload-1-foreground = #9EFF00
+ramp-coreload-2 = ▃
+ramp-coreload-2-font = 4
+ramp-coreload-2-foreground = #FFC700
+ramp-coreload-3 = ▄
+ramp-coreload-3-font = 4
+ramp-coreload-3-foreground = #FF2E00
+
+[module/txt2]
+type = custom/text
+content = 
+content-foreground = #484848
+
+
+[module/volume]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = false
+interval = 5
+label-volume-background = #000000
+format-volume = <ramp-volume><label-volume>
+ramp-volume-0 = 🔈
+ramp-volume-0-background = #000000
+ramp-volume-0-padding = 2
+ramp-volume-1 = 🔉
+ramp-volume-1-background = #000000
+ramp-volume-1-padding = 2
+ramp-volume-2 = 🔊
+ramp-volume-2-background = #000000
+ramp-volume-2-padding = 2
+
+label-muted = 🔇 muted
+label-muted-foreground = #ffffff
+label-muted-background = #ff0000
+
+[module/txt]
+type = custom/text
+content = 
+content-foreground = #000000
+content-background = #1c1c1c
+
+;=================================;
+ ### Configurations bar bottom ###
+;=================================;
+
+[bar/bottom]
+;monitor = ${env:MONITOR:HDMI:1}
+width = 100%
+offset-x = 
+offset-y = 
+radius = 0
+fixed-center = true
+bottom = true
+;separator = --
+
+background = #aa
+;background-1 = 
+;background-2 = 
+
+line-size = 2
+line-color = #ff0000
+
+border-size = 2
+border-color = #aaffffff
+
+padding-left = 0
+padding-right = 0
+
+;module-margin-left = 
+module-margin-right = 
+
+scroll-up = i3-desknext
+scroll-down = i3-deskprev
+
+tray-position = right
+tray-padding = 12
+tray-background = #aa1c1c1c
+tray-scale = 1
+
+
+;=============;
+ ### Fonts ###
+;=============;
+
+font-0 = FontAwesome:size=13
+font-1 = Ubuntu:Regular:size=13
+font-2 = unifont:fontformat=truetype:size=20:antialias=20;2
+font-3 = PowerlineSymbols:pixelsize=18;5
+font-4 = NotoColorEmoji:fontformat=truetype:scale=9:antialias=false;
+
+;===================================;
+ ### Positions end order modules ###
+;===================================;
+
+modules-left = menu kernel installeds trash atlz
+modules-center = 
+modules-right = uptime power 
+
+;=====================;
+ ### Modules right ###
+;=====================;
+
+[module/power]
+type = custom/menu
+
+menu-0-0 = 
+menu-0-0-foreground = #FF0000 
+menu-0-0-padding = 2
+menu-0-0-background = #aa000000
+menu-0-0-exec = shutdown now
+menu-0-1 = 🔄
+menu-0-1-foreground = #0000ff
+menu-0-1-padding = 2
+menu-0-1-background = #aa000000
+menu-0-1-exec = reboot
+menu-0-2 = 🔒
+menu-0-2-exec = i3-msg exit
+menu-0-2-foreground = #FFFC00
+menu-0-2-padding = 2
+menu-0-2-background = #aa000000
+
+expand-right = true
+label-open = 
+label-open-foreground = #FF0000
+label-open-padding = 2
+label-open-background = #aa000000
+label-close = Cancel
+label-close-foreground = #00FF00
+label-close-padding = 2
+label-close-background = #aa000000
+label-separator = |
+
+[module/uptime]
+type = custom/script
+exec = uptime | awk '{print $3}' | sed 's/,/ mim/g' 
+format-prefix = 🆙
+format-prefix-padding = 1
+
+;;=============================;;
+;;        MODULES LEFT         ;;
+;;=============================;;
+
+[module/menu]
+type = custom/script
+exec = printf "🔵"
+label-background = #000000
+label-padding = 2
+format-suffix =   
+format-suffix-foreground = #000000
+format-suffix-background = #0D0D0D
+interval = 120
+click-left = jgmenu_run > /dev/null 2>&1 &
+
+[module/kernel]
+type = custom/script
+exec = uname -r
+label-padding = 2
+label-background = #0D0D0D
+format-prefix = 🐧
+format-prefix-padding = 2
+format-prefix-background = #0D0D0D
+format-suffix =   
+format-suffix-foreground = #0D0D0D
+format-suffix-background = #1c1c1c
+
+[module/installeds]
+type = custom/script
+exec = pacman -Q | wc -l
+label-padding = 2
+label-background = #191919
+format-prefix = 📦
+format-prefix-padding = 2
+format-prefix-background = #191919
+format-suffix =   
+format-suffix-foreground = #191919
+format-suffix-background = 2B2B2B
+
+[module/trash]
+type = custom/script
+exec = ls /var/cache/pacman/pkg| wc -l
+label-padding = 2
+label-background = #2B2B2B
+format-prefix = 🚮
+format-prefix-padding = 2
+format-prefix-background = #2B2B2B
+format-suffix =   
+format-suffix-foreground = #2B2B2B
+format-suffix-background = 4E4E4E
+
+[module/atlz]
+type = custom/script
+exec = ~/.config/polybar/scripts/atlz.sh 
+label-padding = 2
+label-background = #4E4E4E
+format-prefix = 🔃
+format-prefix-background = #4E4E4E
+format-prefix-padding = 2
+format-suffix =   
+format-suffix-foreground = #4E4E4E

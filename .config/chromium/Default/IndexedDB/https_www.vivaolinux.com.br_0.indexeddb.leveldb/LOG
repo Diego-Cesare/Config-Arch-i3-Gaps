@@ -1,0 +1,15 @@
+2020/04/20-21:34:41.019 55e1 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_www.vivaolinux.com.br_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/20-21:34:41.020 55e1 Recovering log #7
+2020/04/20-21:34:41.020 55e1 Reusing old log /home/diego/.config/chromium/Default/IndexedDB/https_www.vivaolinux.com.br_0.indexeddb.leveldb/000007.log 
+2020/04/20-21:35:10.679 3222 Level-0 table #11: started
+2020/04/20-21:35:10.684 3222 Level-0 table #11: 190 bytes OK
+2020/04/20-21:35:10.686 3222 Delete type=0 #7
+2020/04/20-21:35:10.686 3222 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/04/20-21:35:10.687 3222 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x05' @ 9 : 1
+2020/04/20-21:35:10.687 3222 Compacting 1@1 + 1@2 files
+2020/04/20-21:35:10.690 3222 Generated table #12@1: 8 keys, 360 bytes
+2020/04/20-21:35:10.690 3222 Compacted 1@1 + 1@2 files => 360 bytes
+2020/04/20-21:35:10.706 3222 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/04/20-21:35:10.706 3222 Delete type=2 #5
+2020/04/20-21:35:10.706 3222 Delete type=2 #11
+2020/04/20-21:35:10.712 3222 Manual compaction at level-1 from '\x00\x00\x00\x00\x05' @ 9 : 1 .. (end); will stop at (end)

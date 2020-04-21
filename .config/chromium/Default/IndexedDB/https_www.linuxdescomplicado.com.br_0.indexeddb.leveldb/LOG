@@ -1,0 +1,5 @@
+2020/04/19-11:41:50.971 5154 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_www.linuxdescomplicado.com.br_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/19-11:43:08.841 52c4 Level-0 table #5: started
+2020/04/19-11:43:08.855 52c4 Level-0 table #5: 6050 bytes OK
+2020/04/19-11:43:08.857 52c4 Delete type=0 #3
+2020/04/19-11:43:08.858 52c4 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

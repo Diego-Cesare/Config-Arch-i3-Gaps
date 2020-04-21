@@ -1,0 +1,44 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#4267B2",
+      "launch": {
+         "web_url": "https://www.facebook.com/"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_x=8f0suoc7rDl"
+      }, {
+         "size": 32,
+         "url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_x=8f0suoc7rDl"
+      }, {
+         "size": 48,
+         "url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_x=8f0suoc7rDl"
+      }, {
+         "size": 64,
+         "url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_x=8f0suoc7rDl"
+      }, {
+         "size": 96,
+         "url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_x=8f0suoc7rDl"
+      }, {
+         "size": 128,
+         "url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_x=8f0suoc7rDl"
+      }, {
+         "size": 256,
+         "url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_x=8f0suoc7rDl"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "Cy3w9jVYT0LIlfHXuc0QXTEGrM2YBNMFVtqIrhuw1iw=",
+   "name": "Facebook",
+   "version": "2020.4.18.48477"
+}

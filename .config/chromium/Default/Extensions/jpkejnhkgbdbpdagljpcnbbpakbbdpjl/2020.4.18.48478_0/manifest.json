@@ -1,0 +1,44 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#1793D1",
+      "launch": {
+         "web_url": "https://wiki.archlinux.org/"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "https://wiki.archlinux.org/favicon.ico"
+      }, {
+         "size": 32,
+         "url": "https://wiki.archlinux.org/favicon.ico"
+      }, {
+         "size": 48,
+         "url": "https://wiki.archlinux.org/favicon.ico"
+      }, {
+         "size": 64,
+         "url": "https://wiki.archlinux.org/favicon.ico"
+      }, {
+         "size": 96,
+         "url": "https://wiki.archlinux.org/favicon.ico"
+      }, {
+         "size": 128,
+         "url": "https://wiki.archlinux.org/favicon.ico"
+      }, {
+         "size": 256,
+         "url": "https://wiki.archlinux.org/favicon.ico"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "KDzLtInmMn7X6OEmi2aqwwXdXlDwFWmHA5uNG5c2yf4=",
+   "name": "ArchWiki",
+   "version": "2020.4.18.48478"
+}

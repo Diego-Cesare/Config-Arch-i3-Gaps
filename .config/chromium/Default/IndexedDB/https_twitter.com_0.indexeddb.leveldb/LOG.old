@@ -1,0 +1,5 @@
+2020/04/18-18:54:23.438 17a08 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/18-18:55:05.752 387e Level-0 table #5: started
+2020/04/18-18:55:05.757 387e Level-0 table #5: 1264 bytes OK
+2020/04/18-18:55:05.760 387e Delete type=0 #3
+2020/04/18-18:55:05.760 387e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

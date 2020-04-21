@@ -1,0 +1,412 @@
+;=====================================;
+ ### My configurations for polybar ###
+;=====================================;
+;================================================;
+ # By: Diego Cesare <diegocesare300491@gmail.com>
+ # Date: 12/04/2020
+ # For: Arch-Linux & i3 gaps
+ # Version: 1.01 Beta
+ # License: GNU
+ # description: Customizing the theme for Polybar. with some utilities of Arch-Linux systems
+;================================================;
+
+;=========================;
+ ### Color for polybar ###
+;=========================;
+
+[colors]
+background = #ffffff
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+background-alt = #444
+;foreground = ${xrdb:color7:#222}
+foreground = #dfdfdf
+foreground-alt = #555
+
+;======================;
+ ### Configurations ###
+;======================;
+[bar/mybar]
+;monitor = ${env:MONITOR:HDMI:1}
+width = 90%
+offset-x = 0
+offset-y = 0
+radius = 0
+fixed-center = false
+bottom = false
+;separator = --
+
+background = #aa
+;background-1 = #000000
+;background-2 = 
+
+line-size = 2
+;line-color = 
+
+border-size = 5
+border-color = #aa000000
+
+padding-left = 0
+padding-right = 0
+
+;module-margin-left = 
+;module-margin-right =
+
+scroll-up = i3-desknext
+scroll-down = i3-deskprev
+
+;=============;
+ ### Fonts ###
+;=============;
+
+font-0 = FontAwesome:size=13
+font-1 = Ubuntu:Regular:size=13
+font-2 = unifont:fontformat=truetype:size=20:antialias=20;2
+font-3 = PowerlineSymbols:pixelsize=18;5
+font-4 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
+;===================================;
+ ### Positions end order modules ###
+;===================================;
+
+modules-left = i3 arrowi3
+modules-center = window
+modules-right = num caps time volume power
+
+;===============;
+ ### Modules ###
+;===============;
+
+[module/window]
+type = internal/xwindow
+label = %title:1:55%
+label-background = #aa1c1c1c
+radius = 7
+label-underline = 2
+label-padding = 2
+
+[module/time]
+type = internal/date
+label = %time%
+time = %I:%M
+time-alt = %a/%d/%m
+format-prefix = 🕛    
+label-background = #aa1c1c1c
+format-prefix-background = #aa1c1c1c
+
+[module/power]
+type = custom/menu
+
+menu-0-0 = 
+menu-0-0-foreground = #FF0000 
+menu-0-0-padding = 2
+menu-0-0-background = #aa000000
+menu-0-0-exec = shutdown now
+menu-0-1 = 🔄
+menu-0-1-foreground = #0000ff
+menu-0-1-padding = 2
+menu-0-1-background = #aa000000
+menu-0-1-exec = reboot
+menu-0-2 = 🔒
+menu-0-2-exec = i3-msg exit
+menu-0-2-foreground = #FFFC00
+menu-0-2-padding = 2
+menu-0-2-background = #aa000000
+
+expand-right = true
+label-open = 💻
+label-open-foreground = #FF0000
+label-open-padding = 2
+label-open-background = #aa000000
+label-close = 💻
+label-close-foreground = #00FF00
+label-close-padding = 2
+label-close-background = #aa000000
+label-separator = |
+
+[module/caps]
+type = custom/script
+exec = /home/diego/.config/polybar/scripts/caps.sh
+format-background = #aa000000
+format-padding = 2
+format-foreground = #FF0000
+
+[module/num]
+type = custom/script
+exec = /home/diego/.config/polybar/scripts/nun.sh
+format-background = #aa000000
+format-padding = 2
+format-foreground = #00FF00
+
+[module/volume]
+type = internal/pulseaudio
+label-volume = 🔊 %percentage%
+label-volume-background = #aa000000
+label-volume-padding = 1
+label-muted = 🔇 Mut
+label-muted-foreground = #ff0000
+label-muted-background = #aa000000
+label-muted-padding = 1
+
+;[module/arrowi3]
+;type = custom/text
+;content = ""
+;content-font = 
+;content-foreground = #1c1c1c
+;content-background =
+
+[module/i3]
+type = internal/i3
+format = <label-state><label-mode>
+
+index-sort = false
+enable-click = true 
+enable-scroll = true
+ws-icon-0 = 10;10 
+ws-icon-1 = 1;1  
+ws-icon-2 = 2;2 
+ws-icon-3 = 3;3  
+ws-icon-4 = 4;4 
+ws-icon-5 = 5;5 
+ws-icon-6 = 6;6 
+ws-icon-7 = 7;7 
+ws-icon-8 = 8;8 
+ws-icon-9 = 9;9 
+ws-icon-default =
+
+pin-workspaces = true ; Only show workspaces on the same output as the bar
+
+label-mode = " %mode% "
+label-focused = %{F#1c1c1c B#aa6BF9FF}%{F-} %icon%
+
+label-visible = " %icon% "
+label-visible-foreground = #ff0000
+label-visible-background = #1c1c1c
+
+label-unfocused = " %icon% "
+label-unfocused-foreground = #aa000000
+label-unfocused-background = #aa1c1c1c
+
+label-urgent = " %icon% "
+label-urgent-foreground = #1c1c1c
+label-urgent-background = #ff0000
+
+;=================================;
+ ### Configurations bar bottom ###
+;=================================;
+
+[bar/bottom]
+;monitor = ${env:MONITOR:HDMI:1}
+width = 100%
+offset-x = 0
+offset-y = 0
+radius = 0
+fixed-center = false
+bottom = true
+;separator = ┋
+enable-ipc = true
+ 
+background = #aa1c2c3c
+;background-1 = #aa000000
+;background-2 = #000000 
+ 
+;line-size = 2
+;line-color = 
+                                                                                              
+border-size = 2
+border-color = #aa000000
+ 
+;padding-left =
+;padding-right =
+ 
+;module-margin-left =
+;module-margin-right =
+
+tray-position = right
+tray-padding = 12
+tray-background = #aa1c1c1c
+tray-scale = 1
+
+;=============;
+ ### Fonts ###
+;=============;
+ 
+font-0 = FontAwesome:size=10
+font-1 = Ubuntu:Regular:size=13
+font-2 = unifont:fontformat=truetype:size=15:antialias=20;2
+font-3 = PowerlineSymbols:pixelsize=18;5
+font-4 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
+
+
+;===================================;
+ ### Positions end order modules ###
+;===================================;
+
+modules-left = menu 
+modules-center = 
+modules-right = kernel distro updown cache installed atlz cpu mem
+ 
+;===============;
+ ### Modules ###
+;===============;
+
+[module/menu]
+type = custom/menu
+
+expand-right = true
+
+;;=============================
+;;          MENUS
+;==============================
+menu-0-0 =  🌏 Web 
+menu-0-0-background = #1c1c1c
+menu-0-0-padding = 2
+menu-0-0-exec = menu-open-1
+
+;;=============================
+menu-0-1 = 🛠 Settings
+menu-0-1-background = #1c1c1c
+menu-0-1-padding = 2
+menu-0-1-exec = menu-open-2
+;;=============================
+menu-0-2 =  👜Utilities
+menu-0-2-background = #1c1c1c
+menu-0-2-padding = 2
+menu-0-2-exec = menu-open-3
+;;=============================
+;;         SUB-MENUS
+;;=============================
+menu-1-0 =  Chromium
+menu-1-0-exec = chromium &
+menu-1-0-background = #1c1c1c
+menu-1-0-padding = 2
+menu-1-1 =  Qbittorrent
+menu-1-1-exec = qbittorrent &
+menu-1-1-background = #1c1c1c
+menu-1-1-padding = 2
+;;=============================
+menu-2-0 =  Themes
+menu-2-0-exec = lxappearance &
+menu-2-0-background = #1c1c1c
+menu-2-0-padding = 2
+;;menu-2-1 = Scrot
+;;menu-2-1-exec = scrot &
+;;============================
+menu-3-0 =  📝Sublime
+menu-3-0-exec = subl
+menu-3-0-background = #1c1c1c
+menu-3-0-padding = 2
+menu-3-1 =  Terminal
+menu-3-1-exec = xfce4-terminal
+menu-3-1-background = #1c1c1c
+menu-3-1-padding = 2
+menu-3-2 = 📂 Nemo
+menu-3-2-exec = nemo &
+menu-3-2-background = #1c1c1c
+menu-3-2-passing = 2
+
+label-open = 💼
+label-open-foreground = #00F5FF
+label-open-background = #1c1c1c
+label-open-padding = 2
+label-close = 💼
+label-close-foreground = #ff0000
+label-close-background = #1c1c1c
+label-close-padding = 2
+
+label-separator = 
+label-separator-foreground = #101010
+label-separator-background = #1c1c1c
+
+[module/mem]
+type = internal/memory
+interval = 2
+format-prefix = |  
+format-prefix-background = #aa1c2c3c
+format-prefix-foreground = #aa1c1c1c 
+label =   📈 %percentage_used%%
+label-background = #aa1c1c1c
+label-padding = 4
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-suffix = |--
+format-suffix-foreground = #aa1c1c1c
+format-suffix-background = #aa1c2c3c
+label = 📊  %percentage%%
+label-padding = 4
+label-background = #aa1c1c1c
+
+[module/atlz]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/atlz.sh
+interval = 2
+label-padding = 4
+label-background = #FF0000
+
+[module/updown]
+type = custom/script
+exec = ~/.config/polybar/scripts/up-down.sh
+interval = 100
+tail = true
+label-background = #aa1c1c1c
+label-padding = 2
+
+
+[module/distro]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/distro.sh
+label-padding = 2
+label-background = #aa1c1c1c
+format-suffix = |--
+format-suffix-foreground = #aa1c1c1c
+;format-suffix-background = #1c1c1c
+
+[module/kernel]
+type = custom/script
+exec = uname -r
+label-padding = 2
+label-background = #aa1c1c1c
+format-prefix = 🐧
+format-prefix-padding = 2
+format-prefix-background = #FF0000
+
+[module/cache]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/cache.sh
+label-padding = 4
+label-background = #aa1c1c1c
+format-prefix = |
+format-prefix-foreground = #aa1c1c1c
+;format-prefix-background = #FF0000
+
+[module/installed]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/instaled.sh
+label-padding = 4
+label-background = #aa1c1c1c
+format-prefix = |--|
+format-prefix-foreground = #aa1c1c1c
+
+[module/mpd]
+type = internal/mpd
+format-online = <icon-prev>    <toggle>    <icon-next>    <bar-progress>
+icon-prev = ⏮
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = ⏭ 
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+bar-progress-width = 10
+bar-progress-indicator = |
+bar-progress-indicator-foreground = #FDFF00
+bar-progress-fill = 
+bar-progress-fill-foreground = #ff0000
+bar-progress-empty = 
+;bar-progress-fill-background = #1c1c1c
+;bar-progress-empty-background = #1c1c1c
+;bar-progress-empty-foreground = #ff0000

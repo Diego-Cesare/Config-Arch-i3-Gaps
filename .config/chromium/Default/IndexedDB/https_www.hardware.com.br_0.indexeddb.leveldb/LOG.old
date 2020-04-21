@@ -1,0 +1,5 @@
+2020/04/19-19:25:01.981 1af63 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_www.hardware.com.br_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/19-19:25:04.619 1aa84 Level-0 table #5: started
+2020/04/19-19:25:04.624 1aa84 Level-0 table #5: 348 bytes OK
+2020/04/19-19:25:04.632 1aa84 Delete type=0 #3
+2020/04/19-19:25:04.632 1aa84 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

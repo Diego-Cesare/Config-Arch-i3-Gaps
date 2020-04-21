@@ -1,0 +1,41 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#FE3233",
+      "launch": {
+         "web_url": "https://filmesonline.vip/"
+      },
+      "linked_icons": [ {
+         "size": 32,
+         "url": "https://filmesonline.vip/android-chrome-96x96.png"
+      }, {
+         "size": 48,
+         "url": "https://filmesonline.vip/android-chrome-96x96.png"
+      }, {
+         "size": 64,
+         "url": "https://filmesonline.vip/android-chrome-96x96.png"
+      }, {
+         "size": 96,
+         "url": "https://filmesonline.vip/android-chrome-96x96.png"
+      }, {
+         "size": 128,
+         "url": "https://filmesonline.vip/android-chrome-96x96.png"
+      }, {
+         "size": 256,
+         "url": "https://filmesonline.vip/android-chrome-96x96.png"
+      } ],
+      "theme_color": "rgba(255,255,255,1)"
+   },
+   "description": "Conheça o melhor site para assistir filmes e séries online grátis!",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "R/eHjIKLtOHTydi48FDIe2nTw0VnHNS5fzUq1lt7dQw=",
+   "name": "Filmes Online",
+   "version": "2020.4.18.48477"
+}

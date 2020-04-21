@@ -1,0 +1,27 @@
+csv_cmd             = apps
+columms             = 2
+menu_width          = 560
+menu_height_min     = 510
+scroll_width   = 100
+menu_margin_y       = 28
+menu_height_max     = 610
+menu_padding_top    = 40
+menu_padding_right  = 2
+menu_padding_bottom = 1
+menu_padding_left   = 151
+menu_border         = 1
+item_height         = 50
+item_radius         = 2
+item_border         = 12
+item_padding        = 12
+color_menu_bg       = #000000 80
+color_menu_border   = #ffffff 20
+color_norm_fg       = #ffffff 100
+color_sel_bg        = #ffffff 20
+color_sel_fg        = #00ffff 100
+color_sel_border    = #ffffff 50
+color_scroll_ind    = #ffffff 50
+csv_name_format     = %n\n<span size="x-small">%g</span>
+csv_no_dirs         = 1
+font                 = UbuntuMono 14
+icon_size            = 40
