@@ -1,9 +1,0 @@
-2020/04/16-19:21:56.380 2d7c Reusing MANIFEST /home/diego/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
-2020/04/16-19:21:56.386 2d7c Recovering log #53
-2020/04/16-19:21:56.410 2d7c Reusing old log /home/diego/.config/chromium/Default/Sync Data/LevelDB/000053.log 
-2020/04/16-20:10:14.885 8144 Level-0 table #58: started
-2020/04/16-20:10:14.915 8144 Level-0 table #58: 121271 bytes OK
-2020/04/16-20:10:14.926 8144 Delete type=0 #53
-2020/04/16-20:17:32.721 8144 Level-0 table #60: started
-2020/04/16-20:17:32.735 8144 Level-0 table #60: 99426 bytes OK
-2020/04/16-20:17:32.740 8144 Delete type=0 #57

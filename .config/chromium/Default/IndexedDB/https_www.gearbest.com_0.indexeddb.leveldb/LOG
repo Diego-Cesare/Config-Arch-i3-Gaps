@@ -1,5 +1,0 @@
-2020/04/14-01:03:56.934 8bcd Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_www.gearbest.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/14-01:04:32.025 8d6f Level-0 table #5: started
-2020/04/14-01:04:32.029 8d6f Level-0 table #5: 3491 bytes OK
-2020/04/14-01:04:32.031 8d6f Delete type=0 #3
-2020/04/14-01:04:32.031 8d6f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
