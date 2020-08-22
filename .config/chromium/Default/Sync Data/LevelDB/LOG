@@ -1,6 +1,0 @@
-2020/04/21-09:30:40.557 da3 Reusing MANIFEST /home/diego/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
-2020/04/21-09:30:40.560 da3 Recovering log #81
-2020/04/21-09:30:40.571 da3 Reusing old log /home/diego/.config/chromium/Default/Sync Data/LevelDB/000081.log 
-2020/04/21-09:56:01.884 3de4 Level-0 table #85: started
-2020/04/21-09:56:01.895 3de4 Level-0 table #85: 119267 bytes OK
-2020/04/21-09:56:01.898 3de4 Delete type=0 #81

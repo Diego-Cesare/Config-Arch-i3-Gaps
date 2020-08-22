@@ -1,8 +1,0 @@
-2020/04/20-21:35:59.097 56c5 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/20-21:35:59.098 56c5 Recovering log #25
-2020/04/20-21:35:59.098 56c5 Reusing old log /home/diego/.config/chromium/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/000025.log 
-2020/04/20-21:36:15.311 3222 Level-0 table #29: started
-2020/04/20-21:36:15.311 3222 Level-0 table #29: 0 bytes OK
-2020/04/20-21:36:15.314 3222 Delete type=0 #25
-2020/04/20-21:36:15.314 3222 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/04/20-21:36:15.314 3222 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

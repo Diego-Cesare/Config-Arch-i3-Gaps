@@ -1,5 +1,0 @@
-2020/04/19-19:42:40.304 1ccff Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_canaltech.com.br_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/19-19:45:00.294 1aa84 Level-0 table #5: started
-2020/04/19-19:45:00.298 1aa84 Level-0 table #5: 5542 bytes OK
-2020/04/19-19:45:00.301 1aa84 Delete type=0 #3
-2020/04/19-19:45:00.301 1aa84 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

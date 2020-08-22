@@ -1,8 +1,0 @@
-2020/04/20-20:54:17.652 2dc17 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_www.hardware.com.br_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/20-20:54:17.652 2dc17 Recovering log #4
-2020/04/20-20:54:17.652 2dc17 Reusing old log /home/diego/.config/chromium/Default/IndexedDB/https_www.hardware.com.br_0.indexeddb.leveldb/000004.log 
-2020/04/20-20:54:27.491 2e026 Level-0 table #8: started
-2020/04/20-20:54:27.491 2e026 Level-0 table #8: 0 bytes OK
-2020/04/20-20:54:27.495 2e026 Delete type=0 #4
-2020/04/20-20:54:27.502 2e026 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/04/20-20:54:27.514 2e026 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

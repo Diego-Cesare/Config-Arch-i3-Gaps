@@ -1,8 +1,0 @@
-2020/04/20-21:01:58.600 fd8 Reusing MANIFEST /home/diego/.config/chromium/Default/IndexedDB/https_www.vivaolinux.com.br_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/20-21:01:58.600 fd8 Recovering log #4
-2020/04/20-21:01:58.600 fd8 Reusing old log /home/diego/.config/chromium/Default/IndexedDB/https_www.vivaolinux.com.br_0.indexeddb.leveldb/000004.log 
-2020/04/20-21:02:16.087 1574 Level-0 table #8: started
-2020/04/20-21:02:16.087 1574 Level-0 table #8: 0 bytes OK
-2020/04/20-21:02:16.091 1574 Delete type=0 #4
-2020/04/20-21:02:16.092 1574 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2020/04/20-21:02:16.092 1574 Manual compaction at level-1 from (begin) .. (end); will stop at (end)
